@@ -23,7 +23,6 @@
   "prettier.enable": true,
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
-  "prettier.semi": false,
 
   // terminal
   "terminal.integrated.fontSize": 16,
@@ -32,6 +31,5 @@
       "source": "Git Bash"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "window.zoomLevel": 1
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
