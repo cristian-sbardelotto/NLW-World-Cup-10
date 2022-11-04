@@ -37,7 +37,7 @@ In the Next Level Week #10, with a World Cup tematic, the project simulates a ca
 
 ## 🔖 Layout
 
-You can see the layout of the project through [THIS LINK](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate). It's necessary to have an account in  [Figma](https://figma.com) to open it.
+You can see the layout of the project through [THIS LINK](https://www.figma.com/file/goFDyVbmwhpKna2L35EHFs/Calend%C3%A1rio-de-Jogos-(Community)?node-id=0%3A1). It's necessary to have an account in  [Figma](https://figma.com) to open it.
 
 ## License
 
