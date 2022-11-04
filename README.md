@@ -18,7 +18,7 @@ An exclusive and free event, provided by Rocketseat, to exercise the practice of
 <br>
 
 <p align="center">
-  <img alt="nlw" src="./assets/project.png">
+  <img alt="nlw" src='./assets/project.png'>
 </p>
 
 ## 🚀 Technologies
