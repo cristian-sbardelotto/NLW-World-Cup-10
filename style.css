@@ -9,6 +9,8 @@
   --card-title-border-color: #746615;
   --card-bg-color: #1d1c19;
   --bg: url(./assets/bg-yellow.svg);
+  
+  font-size: 62.5%;
 }
 
 body.blue {
@@ -52,6 +54,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 32px;
 }
 
 .card {
@@ -129,7 +132,7 @@ header {
   animation: appear 0.5s;
 }
 
-@keyframes appear {
+/* @keyframes appear {
   0% {
     transform: translateY(-50px);
     opacity: 0;
@@ -138,7 +141,7 @@ header {
   100% {
     opacity: 1;
   }
-}
+} */
 
 @media (min-width: 700px) {
   .cards {
