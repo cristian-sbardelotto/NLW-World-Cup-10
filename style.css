@@ -133,7 +133,7 @@ header {
   animation: appear 0.5s;
 }
 
-/* @keyframes appear {
+ @keyframes appear {
   0% {
     transform: translateY(-5rem);
     opacity: 0;
@@ -142,7 +142,7 @@ header {
   100% {
     opacity: 1;
   }
-} */
+}
 
 @media (min-width: 700px) {
   .cards {
