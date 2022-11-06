@@ -27,7 +27,7 @@ document.querySelector('.cards').innerHTML =
     'terça',
     createGame('argentina', '07:00', 'saudiarabia') +
       createGame('france', '16:00', 'australia')
-  ) +
+   ) +
   createCard(
     '24/11',
     'quinta',

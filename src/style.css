@@ -9,7 +9,10 @@
   --card-title-border-color: #746615;
   --card-bg-color: #1d1c19;
   --bg: url(./assets/bg-yellow.svg);
-  
+
+  --button-bg: hsl(45, 7%, 11%);
+  --button-font-color: hsl(240, 2%, 51%);
+
   font-size: 62.5%;
 }
 
@@ -48,9 +51,61 @@ body * {
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   text-align: center;
   margin-bottom: 6.3rem;
+}
+
+.change-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 23.5rem;
+}
+
+.change-theme__select {
+  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+  width: 13rem;
+
+  background: var(--button-bg);
+  border: none;
+  border-radius: 0.4rem;
+
+  color: var(--button-font-color);
+}
+
+.change-theme__select:focus {
+  background-color: hsl(30, 3%, 14%);
+  outline: none;
+}
+
+.theme-options {
+  color: var(--button-font-color);
+}
+
+.change-theme__button {
+  padding: 0 1rem;
+  height: 2.5rem;
+
+  font-size: 1.25rem;
+
+  border: 2.25px solid var(--button-font-color);
+  border-radius: 0.5rem;
+
+  background: var(--button-bg);
+  color: var(--button-font-color);
+
+  transition: 0.2s all ease;
+}
+
+.change-theme__button:hover {
+  cursor: pointer;
+
+  border-color: hsl(0, 1%, 26%);
+  background-color: rgb(34, 34, 34);
+  box-shadow: #000 0 0 2rem 0;
 }
 
 .cards {
@@ -66,7 +121,7 @@ header {
 
   background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .card h2 {
@@ -75,9 +130,9 @@ header {
   justify-content: center;
   align-items: center;
 
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   border: 1px solid var(--card-title-border-color);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 
   width: fit-content;
   margin-inline: auto;
