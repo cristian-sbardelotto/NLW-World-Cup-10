@@ -1,0 +1,21 @@
+{
+  "name": "nlw-copa",
+  "version": "1.0.0",
+  "description": "In the Next Level Week #10, with a World Cup tematic, the project simulates a calendar with the real games of the Cup, using the main Web Technologies. The project also gives the possibility of changing themes with only CSS.",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx live-server src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[https://github.com/cristian-sbardelotto/NLW-World-Cup-10"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Cristian Sbardelotto",
+  "license": "SEE LICENSE IN license"
+}
