@@ -1,3 +1,15 @@
+const body = document.querySelector('body');
+const cards = document.querySelector('.cards');
+const select = document.querySelector('#change-theme__select');
+const button = document.querySelector('#change-theme__button');
+
+// CHANGE THEME
+button.addEventListener('click', () => {
+  body.attributes.removeNamedItem('class');
+  body.classList.add(select.value);
+});
+
+// CARDS CREATION
 function createGame(player1, hour, player2) {
   return `
     <li>
@@ -21,13 +33,13 @@ function createCard(date, day, games) {
   `;
 }
 
-document.querySelector('.cards').innerHTML =
+cards.innerHTML =
   createCard(
     '22/11',
     'terça',
     createGame('argentina', '07:00', 'saudiarabia') +
       createGame('france', '16:00', 'australia')
-   ) +
+  ) +
   createCard(
     '24/11',
     'quinta',

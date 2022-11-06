@@ -16,14 +16,14 @@
   font-size: 62.5%;
 }
 
-body.blue {
+body.Blue {
   --card-color-primary: #338af3;
   --card-title-border-color: #338af3;
   --card-bg-color: #202024;
   --bg: url(./assets/bg-blue.svg);
 }
 
-body.green {
+body.Green {
   --card-color-primary: #047c3f;
   --card-title-border-color: #047c3f;
   --card-bg-color: #1a1f1b;
