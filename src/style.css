@@ -5,9 +5,9 @@
 }
 
 :root {
-  --card-color-primary: #f7dd43;
-  --card-title-border-color: #746615;
-  --card-bg-color: #1d1c19;
+  --card-color-primary: hsl(51, 92%, 62%);
+  --card-title-border-color: hsl(51, 69%, 27%);
+  --card-bg-color: hsl(45, 7%, 11%);
   --bg: url(./assets/bg-yellow.svg);
 
   --button-bg: hsl(45, 7%, 11%);
@@ -16,30 +16,25 @@
   font-size: 62.5%;
 }
 
+/* Themes */
+
 body.Blue {
-  --card-color-primary: #338af3;
-  --card-title-border-color: #338af3;
-  --card-bg-color: #202024;
+  --card-color-primary: hsl(213, 89%, 58%);
+  --card-title-border-color: hsl(213, 89%, 58%);
+  --card-bg-color: hsl(240, 6%, 13%);
   --bg: url(./assets/bg-blue.svg);
 }
 
 body.Green {
-  --card-color-primary: #047c3f;
-  --card-title-border-color: #047c3f;
-  --card-bg-color: #1a1f1b;
+  --card-color-primary: hsl(150, 94%, 25%);
+  --card-title-border-color: hsl(150, 94%, 25%);
+  --card-bg-color: hsl(132, 9%, 11%);
   --bg: url(./assets/bg-green.svg);
 }
 
-ul {
-  list-style: none;
-}
-
 body {
-  background: #121214 var(--bg) no-repeat top center/cover;
-}
-
-body * {
   font-family: 'Roboto', sans-serif;
+  background: hsl(240, 5%, 7%) var(--bg) no-repeat top center/cover;
 }
 
 #app {
@@ -50,9 +45,10 @@ body * {
 
 header {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: space-around;
   align-items: center;
-
   text-align: center;
   margin-bottom: 6.3rem;
 }
@@ -61,7 +57,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 23.5rem;
 }
 
@@ -79,10 +74,6 @@ header {
 .change-theme__select:focus {
   background-color: hsl(30, 3%, 14%);
   outline: none;
-}
-
-.theme-options {
-  color: var(--button-font-color);
 }
 
 .change-theme__button {
@@ -104,8 +95,8 @@ header {
   cursor: pointer;
 
   border-color: hsl(0, 1%, 26%);
-  background-color: rgb(34, 34, 34);
-  box-shadow: #000 0 0 2rem 0;
+  background-color: hsl(0, 0%, 13%);
+  box-shadow: hsl(0, 0%, 0%) 0 0 2rem 0;
 }
 
 .cards {
@@ -115,76 +106,14 @@ header {
   margin-bottom: 3.2rem;
 }
 
+
 .card {
   padding: 3.2rem 2.3rem;
   text-align: center;
-
+  
   background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 0.6rem;
-}
-
-.card h2 {
-  display: flex;
-  gap: 1.6rem;
-  justify-content: center;
-  align-items: center;
-
-  padding: 0.8rem 1.6rem;
-  border: 1px solid var(--card-title-border-color);
-  border-radius: 0.6rem;
-
-  width: fit-content;
-  margin-inline: auto;
-  margin-bottom: 5.3rem;
-
-  color: #f7dd43;
-  font-size: 2rem;
-}
-
-.card h2 span {
-  color: #e1e1e6;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
-
-.card ul {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-
-  width: 27rem;
-}
-
-.card ul li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card ul li span {
-  font-weight: 900;
-  font-size: 3.6rem;
-  line-height: 125%;
-
-  color: #e1e1e6;
-}
-
-.card ul li + li {
-  padding-top: 2.4rem;
-  border-top: 1px solid #323238;
-}
-
-.card ul li span:hover,
-.card ul li img:hover,
-.card h2:hover {
-  transform: scale(1.1);
-}
-
-.card ul li span,
-.card ul li img,
-.card h2 {
-  transition: transform 0.2s;
 }
 
 /*
@@ -203,10 +132,79 @@ header {
   }
 } */
 
+.card h2 {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.8rem 1.6rem;
+  border: 1px solid var(--card-title-border-color);
+  border-radius: 0.6rem;
+
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 5.3rem;
+
+  color: hsl(51, 92%, 62%);
+  font-size: 2rem;
+}
+
+.card h2 span {
+  color: hsl(240, 9%, 89%);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 27rem;
+
+  list-style: none;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card ul li span {
+  font-weight: 900;
+  font-size: 3.6rem;
+  line-height: 125%;
+
+  color: hsl(240, 9%, 89%);
+}
+
+.card ul li + li {
+  padding-top: 2.4rem;
+  border-top: 1px solid hsl(240, 6%, 21%);
+}
+
+.card ul li span:hover,
+.card ul li img:hover,
+.card h2:hover {
+  transform: scale(1.1);
+}
+
+.card ul li span,
+.card ul li img,
+.card h2 {
+  transition: transform 0.2s;
+}
+
+
 @media (min-width: 700px) {
   .cards {
     max-width: 67rem;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  header {
+    flex-direction: row;
   }
 }
