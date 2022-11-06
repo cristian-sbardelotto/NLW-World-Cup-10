@@ -12,26 +12,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="green">
-  <div id="app">
+<body class="yellow">
+  <main id="app">
     <header>
       <img src="./assets/logo.svg" alt="Logo da NLW" />
 
-      <div class="change-theme">
-        <input type="text" id="change-theme__input" class="change-theme__input" list="themes">
-        <datalist id="themes">
-          <option>Tema Padrão</option>
-          <option>Tema Verde</option>
-          <option>Tema Azul</option>
-        </datalist>
+      <section class="change-theme">
+        <select id="change-theme__select" class="change-theme__select">
+          <option class="theme-options">Default</option>
+          <option class="theme-options">Green</option>
+          <option class="theme-options">Blue</option>
+        </select>
         <button class="change-theme__button" id="change-theme__button">Mudar Tema</button>
-      </div>
-
+      </section>
     </header>
-    <main class="cards">
 
-    </main>
-  </div>
+    <section class="cards"></section>
+  </main>
 
   <script src="./main.js"></script>
 </body>

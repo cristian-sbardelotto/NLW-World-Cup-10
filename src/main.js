@@ -1,3 +1,15 @@
+const body = document.querySelector('body');
+const cards = document.querySelector('.cards');
+const select = document.querySelector('#change-theme__select');
+const button = document.querySelector('#change-theme__button');
+
+// CHANGE THEME
+button.addEventListener('click', () => {
+  body.attributes.removeNamedItem('class');
+  body.classList.add(select.value);
+});
+
+// CARDS CREATION
 function createGame(player1, hour, player2) {
   return `
     <li>
@@ -12,16 +24,16 @@ let delay = -0.3;
 function createCard(date, day, games) {
   delay = delay + 0.3;
   return `
-    <div class="card" style='animation-delay: ${delay}s'>
+    <blockquote class="card" style='animation-delay: ${delay}s'>
       <h2>${date}<span>${day}</span></h2>
       <ul>
         ${games}
       </ul>
-    </div>
+    </blockquote>
   `;
 }
 
-document.querySelector('.cards').innerHTML =
+cards.innerHTML =
   createCard(
     '22/11',
     'terça',
