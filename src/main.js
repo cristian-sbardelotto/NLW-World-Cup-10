@@ -35,41 +35,14 @@ function createCard(date, day, games) {
 
 cards.innerHTML =
   createCard(
-    '22/11',
-    'terça',
-    createGame('argentina', '07:00', 'saudiarabia') +
-      createGame('france', '16:00', 'australia')
-  ) +
-  createCard(
-    '24/11',
-    'quinta',
-    createGame('uruguay', '10:00', 'southkorea') +
-      createGame('portugal', '13:00', 'ghana') +
-      createGame('brazil', '16:00', 'serbia')
-  ) +
-  createCard(
-    '26/11',
-    'sábado',
-    createGame('france', '13:00', 'denmark') +
-      createGame('argentina', '16:00', 'mexico')
-  ) +
-  createCard(
-    '28/11',
+    '05/12',
     'segunda',
-    createGame('southkorea', '10:00', 'ghana') +
-      createGame('brazil', '13:00', 'switzerland') +
-      createGame('portugal', '16:00', 'uruguay')
+    createGame('japan', '12:00', 'croatia') +
+      createGame('brazil', '16:00', 'southkorea')
   ) +
   createCard(
-    '30/11',
-    'quarta',
-    createGame('tunisia', '12:00', 'france') +
-      createGame('poland', '16:00', 'argentina')
-  ) +
-  createCard(
-    '02/12',
-    'sexta',
-    createGame('southkorea', '12:00', 'portugal') +
-      createGame('ghana', '12:00', 'uruguay') +
-      createGame('cameroon', '16:00', 'brazil')
+    '06/12',
+    'terça',
+    createGame('morocco', '12:00', 'spain') +
+      createGame('portugal', '13:00', 'switzerland')
   );
